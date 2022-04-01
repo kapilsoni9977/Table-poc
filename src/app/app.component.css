@@ -2,7 +2,6 @@ table {
   /* width: 768px; */
   width: 100%;
   height: 167px;
-  border: 1000px;
 }
 
 .mat-column-position {
@@ -13,7 +12,7 @@ table {
 }
 
 .mat-column-name {
-  /* font-family: proxima-nova; */
+  font-family: proxima-nova;
   font-style: bold;
   font-weight: 700;
   width: 92px;
@@ -26,6 +25,7 @@ table {
 }
 
 .mat-column-dob {
+  font-family: proxima-nova;
   font-weight: 400;
   width: 86px;
   height: 21px;
@@ -37,6 +37,7 @@ table {
 }
 
 .mat-column-ed {
+  font-family: proxima-nova;
   font-weight: 400;
   width: 86px;
   height: 21px;
@@ -48,6 +49,7 @@ table {
 }
 
 .mat-column-gender {
+  font-family: proxima-nova;
   font-weight: 400;
   width: 15px;
   height: 21px;
