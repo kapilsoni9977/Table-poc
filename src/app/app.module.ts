@@ -43,10 +43,12 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { StepperPaginatorComponent } from './stepper-paginator/stepper-paginator.component';
+import { Table2Component } from './table2/table2.component';
+import { Table3Component } from './table3/table3.component';
 // import { TableComponent } from '../table/table.component';
 
 @NgModule({
-  declarations: [AppComponent, StepperPaginatorComponent],
+  declarations: [AppComponent, StepperPaginatorComponent, Table2Component,Table3Component],
   bootstrap: [AppComponent],
   providers: [
     {

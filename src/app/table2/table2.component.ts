@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { MatSelectModule } from '@angular/material/select';
+import { Component, OnInit } from '@angular/core';
 
 export interface PeriodicElement {
   name: string;
@@ -7,7 +6,7 @@ export interface PeriodicElement {
   dob: string;
   ed: string;
   gender: string;
-  phone: number;
+  action: any;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
@@ -17,7 +16,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
     dob: '02/14/1988',
     ed: '02/14/1988',
     gender: 'M',
-    phone: 9988,
+    action: '',
   },
   {
     position: 2,
@@ -25,20 +24,21 @@ const ELEMENT_DATA: PeriodicElement[] = [
     dob: '02/14/1988',
     ed: '02/14/1988',
     gender: 'F',
-    phone: 9988,
+    action: '',
   },
 ];
 
-/**
- * @title Basic use of `<table mat-table>`
- */
-
 @Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-table2',
+  templateUrl: './table2.component.html',
+  styleUrls: ['./table2.component.css'],
 })
-export class AppComponent {
+export class Table2Component implements OnInit {
+  constructor() {}
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+
   name = 'Angular';
   displayedColumns: any[] = [
     'position',
@@ -46,7 +46,7 @@ export class AppComponent {
     'dob',
     'ed',
     'gender',
-    // 'phone',
+    'action',
   ];
   dataSource = ELEMENT_DATA;
 }

@@ -30,7 +30,7 @@ table {
   width: 86px;
   height: 21px;
   size: 18px;
-  letter-spacing: 0.22px;
+  /* letter-spacing: 0.22px; */
   line-height: 0px;
   text-align: left;
   color: #555555;
@@ -42,8 +42,8 @@ table {
   width: 86px;
   height: 21px;
   size: 18px;
-  letter-spacing: 0.22px;
-  line-height: 0px;
+  /* letter-spacing: 0.22px; */
+  /* line-height: 0px; */
   text-align: left;
   color: #555555;
 }
@@ -54,8 +54,8 @@ table {
   width: 15px;
   height: 21px;
   size: 18px;
-  letter-spacing: 0.22px;
-  line-height: 0px;
+  /* letter-spacing: 0.22px; */
+  /* line-height: 0px; */
   text-align: left;
   color: #555555;
 }
