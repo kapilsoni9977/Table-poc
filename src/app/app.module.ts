@@ -45,10 +45,17 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { StepperPaginatorComponent } from './stepper-paginator/stepper-paginator.component';
 import { Table2Component } from './table2/table2.component';
 import { Table3Component } from './table3/table3.component';
+import { Table4Component } from './table4/table4.component';
 // import { TableComponent } from '../table/table.component';
 
 @NgModule({
-  declarations: [AppComponent, StepperPaginatorComponent, Table2Component,Table3Component],
+  declarations: [
+    AppComponent,
+    StepperPaginatorComponent,
+    Table2Component,
+    Table3Component,
+    Table4Component,
+  ],
   bootstrap: [AppComponent],
   providers: [
     {

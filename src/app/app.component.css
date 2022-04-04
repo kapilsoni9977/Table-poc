@@ -31,7 +31,7 @@ table {
   height: 21px;
   size: 18px;
   /* letter-spacing: 0.22px; */
-  line-height: 0px;
+  /* line-height: 0px; */
   text-align: left;
   color: #555555;
 }
@@ -47,7 +47,6 @@ table {
   text-align: left;
   color: #555555;
 }
-
 .mat-column-gender {
   font-family: proxima-nova;
   font-weight: 400;
