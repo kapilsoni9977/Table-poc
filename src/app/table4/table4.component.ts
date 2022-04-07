@@ -1,33 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 
-export interface PeriodicElement {
-  name: string;
-  state: string;
-  dob: string;
-  action: any;
-}
-
-const ELEMENT_DATA: PeriodicElement[] = [
-  {
-    name: 'Loremipsumn',
-    state: 'New Hampshire',
-    dob: '03/20/1966',
-    action: '',
-  },
-  {
-    name: 'Jane Smith',
-    state: 'New York',
-    dob: '03/22/1980',
-    action: '',
-  },
-
-  {
-    name: 'Jane Smith',
-    state: 'Alabama',
-    dob: '04/17/1980',
-    action: '',
-  },
-];
 
 @Component({
   selector: 'app-table4',
@@ -39,7 +12,77 @@ export class Table4Component implements OnInit {
 
   ngOnInit() {}
 
-  name = 'Angular';
-  displayedColumns: any[] = ['action', 'name', 'state', 'dob'];
-  dataSource = ELEMENT_DATA;
+  filterValues = {};
+  dataSource = new MatTableDataSource();
+  displayedColumns: string[] = [
+    'id',
+    'PatientName',
+    'SubmittedOn',
+    'Claim',
+    'EventType',
+    'Nickname',
+    'status',
+  ];
+
+
+  filterSelectObj = [];
+
+  constructor() {
+    // Object to create Filter for
+    this.filterSelectObj = [
+      {
+        name: 'ID',
+        columnProp: 'id',
+        options: [],
+      },
+      {
+        name: 'NAME',
+        columnProp: 'name',
+        options: [],
+      },
+      {
+        name: 'USERNAME',
+        columnProp: 'username',
+        options: [],
+      },
+      {
+        name: 'EMAIL',
+        columnProp: 'email',
+        options: [],
+      },
+     
+    ];
+  }
+
+  ngOnInit() {
+    this.getRemoteData();
+  }
+
+  getRemoteData() {
+    const remoteDummyData = [
+     
+      {
+        id: 1,
+        PatientName: 'Jennifer McArthart',
+        SubmittedOn: '04/14/2020',
+        Claim: '123456789',
+        EventType: 'Loremi',
+        Nickname: 'Loremi',
+        status: '',
+      },
+      {
+        id: 2,
+        PatientName: 'Jennifer McArthart',
+        SubmittedOn: '04/14/2020',
+        Claim: '123456789',
+        EventType: 'Loremi',
+        Nickname: 'Loremi',
+        status: '',
+      },
+     
+    ];
+    this.dataSource.data = remoteDummyData;
+
+  }
+
 }
