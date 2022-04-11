@@ -8,9 +8,9 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./table4.component.css'],
 })
 export class Table4Component implements OnInit {
-  constructor() {}
+  // constructor() {}
 
-  ngOnInit() {}
+  // ngOnInit() {}
 
   filterValues = {};
   dataSource = new MatTableDataSource();
